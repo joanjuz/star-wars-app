@@ -17,6 +17,12 @@ export default class StarWarsPeople extends React.Component{
                     <tr>
                         <th>Nombre</th>
                         <th>Altura</th>
+                        <th>Peso</th>
+                        <th>Color de Pelo</th>
+                        <th>Color de piel</th>
+                        <th>Color de ojos</th>
+                        <th>Nacimiento</th>
+                        <th>Genero</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,6 +30,12 @@ export default class StarWarsPeople extends React.Component{
                         return (<tr>
                             <td>{character.name}</td>
                             <td>{character.height}</td>
+                            <td>{character.mass}</td>
+                            <td>{character.hair_color}</td>
+                            <td>{character.skin_color}</td>
+                            <td>{character.eye_color}</td>
+                            <td>{character.birth_year}</td>
+                            <td>{character.gender}</td>
                         </tr>
                     )
                     })}
